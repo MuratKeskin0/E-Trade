@@ -1,0 +1,63 @@
+body {
+    background-color: color-mix(in srgb, rgb(33, 179, 241) 30%, red 25%);
+    font-family: fantasy;
+    margin: 0;
+    top: 0;
+}
+
+header {
+    background-color: color-mix(in srgb, rgb(9, 243, 247) 30%, rgb(144, 9, 234) 25%);
+    color: rgb(31, 31, 31);
+    padding: 1em;
+    text-align: center;
+}
+
+main {
+    padding: 1em;
+}
+
+section {
+    margin-bottom: 2em;
+}
+
+.product, #cart, #checkout-section, #reviews {
+    border: 1px solid rgb(22, 21, 21);
+    background-color: aliceblue;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+.product,  #checkout {
+    border: 1px solid rgb(22, 21, 21);
+    background-color: rgb(8, 128, 233);
+    color: rgb(15, 16, 17);
+    padding: auto;
+    margin-bottom: 1em;
+}
+
+
+
+.product h3, #cart h2, #checkout-section h2, #reviews h2 {
+    margin-top: 0;
+}
+
+#side-by-side {
+    display: flex;
+    gap: 20px;
+}
+
+.video-container {
+    flex: 1;
+    padding: auto;
+    margin-left: 3em;
+    margin-top: 1em;
+}
+
+#text-content {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    flex: 1;
+    padding: auto;
+    margin-right: 3em;
+
+}

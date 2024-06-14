@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Shopping Site Payment Page</h1>
+    </header>
+    <main>
+        <section id="products">
+            <h2>Products</h2>
+            <div class="product" data-id="1" data-name="Electric Bike" data-price="25000">
+                <h3>Electric Bike</h3>
+                <p>Price: 25000</p>
+                <button class="add-to-cart">Add to Basket</button>
+            </div>
+
+            <div class="product" data-id="2" data-name="Iphone 15" data-price="70000">
+                <h3>Iphone 15</h3>
+                <p>Price: 70000</p>
+                <button class="add-to-cart">Add to Basket</button>
+            </div>
+        </section>
+
+        <section id="cart">
+            <h2>Cart</h2>
+            <ul id="cart-items"></ul>
+            <p id="total-price">Total: 0</p>
+            <button id="checkout">Buy</button>
+        </section>
+
+        <section id="checkout-section" style="display:none;">
+            <h2>Payment Page</h2>
+            <form id="payment-form">
+                <label for="name">Name Surname:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="card-number">Card Number:</label>
+                <input type="text" id="card-number" name="card-number" required>
+                <button type="submit">Pay</button>
+            </form>
+        </section>
+
+        <section id="reviews">
+            <h2>User Comments</h2>
+            <form id="review-form">
+                <label for="review">Your Comment:</label>
+                <textarea id="review" name="review" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+            <ul id="review-list"></ul>
+        </section>
+
+        <section id="side-by-side">
+            <div class="video-container">
+                <video id="video-player" width="640" controls>
+                    <source src="#" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div id="text-content">
+                <h2>Messi's Life</h2>
+                <div id="text-file-content">
+                    <!-- The content of the text file will be displayed here -->
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
